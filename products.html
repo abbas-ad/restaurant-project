@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/fonst.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://getcssscan.com/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="./css/biggerFontsSize.css" />
+    <link
+      href="https://unpkg.com/shimmer-css@1.0.0/shimmer.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <title>salon</title>
+  </head>
+  <body>
+    <div class="swiper-positions">
+      <div
+        class="swiper swiper-panorama swiper-3d swiper-initialized swiper-horizontal swiper-rtl swiper-watch-progress swiper-navigation-disabled swiper-scrollbar-disabled"
+      >
+        <div
+          class="swiper-wrapper"
+          style="cursor: grab; transition-duration: 500ms"
+        >
+          <div
+            class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide-imagess"
+          >
+            <img
+              class="swiper-slide-image"
+              loading="lazy"
+              src="./desing/60eaade3458e787879d3d0ae_xzdgxfg (1).jpg"
+            />
+          </div>
+
+          <div class="swiper-slide swiper-slide-next swiper-slide-imagess">
+            <img
+              class="swiper-slide-image"
+              loading="lazy"
+              src="./desing/Hair_Salon_Stations.jpg"
+            />
+          </div>
+
+          <div class="swiper-slide swiper-slide-imagess">
+            <img
+              class="swiper-slide-image"
+              loading="lazy"
+              src="./desing/iStock-497154557.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-tag">
+      <div class="title-catd">
+        <div class="title-text" style="padding-top: 28px;">
+          <span>ارایشگاه ساحل</span>
+          <div class="emteyazat">
+            <span id="badge-number">شماره یک</span>
+          </div>
+        </div>
+        <div class="rate-part">
+          <div class="rating-positions">
+            <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text" style="color: #faad5b;"
+                >2 stars</label
+              >
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text" style="color: #faad5b;"
+                >1 star</label
+              >
+            </div>
+          </div>
+          <div class="cm">نظرات (6)</div>
+        </div>
+      </div>
+      <div
+        class="container-fluid mb-6 d-flex justify-content-center fixed-topMenuGroup get-swipper"
+      >
+        <div
+          class="swiper-container swiper-categories text-center swiper-container-horizontal swiper-container-rtl"
+        >
+          <div id="button-nav" class="swiper-wrapper">
+            <!-- این قسمت باید از اینجا به بعد حلقه اعمال شود -->
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide"
+              id="1"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm spicial-color cousrom-icones actives-swiperss"
+              >
+                <p class="small mt-1 backText menuGroupName">
+                  جزییات
+                </p>
+              </a>
+            </div>
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide-next"
+              id="2"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm bg-groupFood"
+              >
+                <p class="small mt-1 backText menuGroupName">خدمات</p>
+              </a>
+            </div>
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide-next"
+              id="3"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm bg-groupFood"
+              >
+                <p class="small mt-1 backText menuGroupName">گالری</p>
+              </a>
+            </div>
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide-next"
+              id="4"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm bg-groupFood"
+              >
+                <p class="small mt-1 backText menuGroupName">نظرات</p>
+              </a>
+            </div>
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide-next"
+              id="5"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm bg-groupFood"
+              >
+                <p class="small mt-1 backText menuGroupName">ثبت نظر</p>
+              </a>
+            </div>
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide-next"
+              id="6"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm bg-groupFood"
+              >
+                <p class="small mt-1 backText menuGroupName">توضیحات</p>
+              </a>
+            </div>
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide-next"
+              id="7"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm bg-groupFood"
+              >
+                <p class="small mt-1 backText menuGroupName">نوبت ها</p>
+              </a>
+            </div>
+            <div
+              class="swiper-slide w-auto p-1 text-center swiper-slide-next"
+              id="8"
+              onclick="selectTabs(this.id)"
+            >
+              <a
+                href="#"
+                id="nav2"
+                class="icons icons-60 shadow-sm bg-groupFood"
+              >
+                <p class="small mt-1 backText menuGroupName">یه خورده بشتر</p>
+              </a>
+            </div>
+
+            <!-- End Of swiper SLide -->
+          </div>
+        </div>
+      </div>
+      <!--  details-viwe part -->
+      <div class="details-viwe">
+        <div class="descerptions-catd">
+          <div class="title-text">
+            <span>درباره ارایشگاه</span>
+          </div>
+          <hr class="hr-part" />
+          <span class="descriptions-coustom">
+            ارایشگاه ساحل با تجربه 5سال خدمات رسانی به مشتریان عزیز در زمینه های
+            مختلف .
+          </span>
+        </div>
+
+        <div class="contact-us-catd">
+          <div class="contact-us title">
+            ارتباط با ما
+            <br />
+            <span class="descerptions-of-sitials"> اگر سوالی دارید </span>
+          </div>
+          <div class="sotioals-icones">
+            <div class="icone-part">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+            </div>
+            <div class="icone-part">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="icone-part">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="our-positions">
+          <div class="gps-part">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d322.6828208056699!2d50.86688417704844!3d28.946680697141005!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfa!2sru!4v1690727570884!5m2!1sfa!2sru"
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="custom-map"
+            ></iframe>
+          </div>
+          <div class="descriptions-coustom">
+            <span>برای مشاهده ارایشگاه کلیک کنید</span>
+            <div class="locations-icone-part">
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="resevtians-timing" style="height: auto">
+          <div class="title-text">
+            <span>وضعیت</span>
+            <div class="status">باز</div>
+          </div>
+          <hr class="hr-part" />
+          <div class="resebtions-box">
+            <div class="resebtions-info">
+              <span class="resebtions-todays">جمعه</span>
+              <span class="resebtions-desc"
+                >برای رضرو کردن نوبت روی نوبت های خالی کلیک کنید</span
+              >
+            </div>
+            <div class="resebtions-data">
+              <span class="resebtions-days">18:00 - 19:00</span>
+              <span class="resebtions-days">19:20 - 20:20</span>
+              <span class="resebtions-days">21:00 - 22:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- service- viwe pert  -->
+
+      <div class="service-part">
+        <div class="service-part-postions">
+          <div class="service-box">
+            <div class="service-box-left-img">
+              <form>
+                <input type="checkbox" id="myCheckbox2" />
+                <label for="myCheckbox2" class="checkedTheService"
+                  ><img src="./desing/mens-hairstyle1-e2.jpg"
+                /></label>
+                <input type="checkbox" id="myCheckbox" />
+              </form>
+            </div>
+            <div class="service-box-info">
+              <div class="service-box-tittle">
+                <label for="myCheckbox2">
+                  اصلاح سر
+                </label>
+              </div>
+              <div class="service-box-tags-positions">
+                <span class="service-box-tags">اصلاح</span>
+                <span class="service-box-tags">اصلاح</span>
+              </div>
+              <hr class="hr-part-service-box" />
+              <div class="service-box-price-positions">
+                <span class="pending-time">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  10:00
+                </span>
+                <div class="service-boxs-price">
+                  <span class="service-box-price">150,000</span>
+                  <br />
+                  <span class="service-box-price-type">هزار تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="resevtian-service-porsitions">
+              <button class="submit-resevtians-buttons">ثبت نوبت</button>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-box-left-img">
+              <form>
+                <input type="checkbox" id="myCheckbox1" />
+                <label for="myCheckbox1" class="checkedTheService"
+                  ><img src="./desing/models24.jpg"
+                /></label>
+                <input type="checkbox" id="myCheckbox" />
+              </form>
+            </div>
+            <div class="service-box-info">
+              <div class="service-box-tittle">
+                <label for="myCheckbox1">
+                  اصلاح سر
+                </label>
+              </div>
+              <div class="service-box-tags-positions">
+                <span class="service-box-tags">اصلاح</span>
+                <span class="service-box-tags">اصلاح</span>
+              </div>
+              <hr class="hr-part-service-box" />
+              <div class="service-box-price-positions">
+                <span class="pending-time">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  10:00
+                </span>
+                <div class="service-boxs-price">
+                  <span class="service-box-price">150,000</span>
+                  <br />
+                  <span class="service-box-price-type">هزار تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resevtian-service-porsitions">
+            <span class="total-price">110 هزار تومان</span>
+            <button class="submit-resevtians-buttons">
+              <a href="./resevtions.html">ثبت نوبت</a>
+            </button>
+          </div>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <!-- gralery pert -->
+      <div class="galery-part">
+        <span class="galery-tittle-tex">مدل اصلاح سر</span>
+        <div class="container-fluid" style="margin-top: 30px;">
+          <div
+            class="swiper-container swiper-categories text-center swiper-container-horizontal swiper-container-rtl"
+          >
+            <div id="button-nav" class="swiper-wrapper">
+              <!-- این قسمت باید از اینجا به بعد حلقه اعمال شود -->
+              <div
+                class="swiper-slide w-auto p-1 text-center swiper-slide galery-wiper-slider"
+              >
+                <a
+                  href="#"
+                  class="salon-galery-desin icons-60 shadow-sm  cousrom-icones"
+                >
+                  <img
+                    id="item1"
+                    src="./desing/mens-hairstyle1-e2.jpg"
+                    class="product-images"
+                    onclick="showingGaleryImages(this)"
+                  />
+                  <span class="galery-model-types">مدل : سایه روشن</span>
+                </a>
+              </div>
+              <div
+                class="swiper-slide w-auto p-1 text-center swiper-slide galery-wiper-slider"
+              >
+                <a
+                  href="#"
+                  class="salon-galery-desin icons-60 shadow-sm  cousrom-icones"
+                >
+                  <img
+                    id="item2"
+                    src="./desing/Captdasdasdure.PNG"
+                    class="product-images"
+                    onclick="showingGaleryImages(this)"
+                  />
+                  <span class="galery-model-types">مدل : سایه روشن</span>
+                </a>
+              </div>
+              <div
+                class="swiper-slide w-auto p-1 text-center swiper-slide galery-wiper-slider"
+              >
+                <a
+                  href="#"
+                  class="salon-galery-desin icons-60 shadow-sm  cousrom-icones"
+                >
+                  <img
+                    id="item3"
+                    src="./desing/modelsmo.jpg"
+                    class="product-images"
+                    onclick="showingGaleryImages(this)"
+                  />
+                  <span class="galery-model-types">مدل : سایه روشن</span>
+                </a>
+              </div>
+
+              <!-- End Of swiper SLide -->
+            </div>
+          </div>
+        </div>
+        <span class="galery-tittle-tex">ترمیم ناخن</span>
+        <div class="container-fluid" style="margin-top: 30px;">
+          <div
+            class="swiper-container swiper-categories text-center swiper-container-horizontal swiper-container-rtl"
+          >
+            <div id="button-nav" class="swiper-wrapper">
+              <!-- این قسمت باید از اینجا به بعد حلقه اعمال شود -->
+              <div
+                class="swiper-slide w-auto p-1 text-center swiper-slide galery-wiper-slider"
+              >
+                <a
+                  href="#"
+                  class="salon-galery-desin icons-60 shadow-sm  cousrom-icones"
+                >
+                  <img
+                    id="item3"
+                    src="./desing/436699_991.jpg"
+                    class="product-images"
+                    onclick="showingGaleryImages(this)"
+                  />
+                  <span class="galery-model-types">مدل : کهکشانی</span>
+                </a>
+              </div>
+              <div
+                class="swiper-slide w-auto p-1 text-center swiper-slide galery-wiper-slider"
+              >
+                <a
+                  href="#"
+                  class="salon-galery-desin icons-60 shadow-sm  cousrom-icones"
+                >
+                  <img
+                    id="item4"
+                    src="./desing/tarmim.jpg"
+                    class="product-images"
+                    onclick="showingGaleryImages(this)"
+                  />
+                  <span class="galery-model-types">مدل : هفت رنگ</span>
+                </a>
+              </div>
+              <div
+                class="swiper-slide w-auto p-1 text-center swiper-slide galery-wiper-slider"
+              >
+                <a
+                  href="#"
+                  class="salon-galery-desin icons-60 shadow-sm  cousrom-icones"
+                >
+                  <img
+                    id="item5"
+                    src="./desing/nakhon.jpg"
+                    class="product-images"
+                    onclick="showingGaleryImages(this)"
+                  />
+                  <span class="galery-model-types">مدل : سفید</span>
+                </a>
+              </div>
+
+              <!-- End Of swiper SLide -->
+            </div>
+          </div>
+        </div>
+        <div class="galery-images-backgrounds" onclick="closingGalery(this)">
+          <div class="galery-images-backgrounds-images">
+            <img src="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- user comments -->
+      <div class="comments-part">
+        <div class="comments-part-positions">
+          <div class="salon-comments-tittle-part">
+            <span>نظرات و امتیازات</span>
+            <hr class="commont-hr-part" />
+          </div>
+          <div class="rate-part">
+            <div class="rating-numbers">2.0</div>
+            <div class="rating-positions">
+              <div class="comments-rating">
+                <input type="radio" id="stars5" name="rates" value="5" />
+                <label for="stars5" title="text">5 stars</label>
+                <input type="radio" id="stars4" name="rates" value="4" />
+                <label for="stars4" title="text">4 stars</label>
+                <input type="radio" id="stars3" name="rates" value="3" />
+                <label for="stars3" title="text">3 stars</label>
+                <input type="radio" id="stars2" name="rates" value="2" />
+                <label for="stars2" title="text" style="color: #f8aa48;"
+                  >2 stars</label
+                >
+                <input type="radio" id="stars1" name="rates" value="1" />
+                <label for="stars1" title="text" style="color: #f8aa48;"
+                  >1 star</label
+                >
+              </div>
+            </div>
+            <div class="salon-comments">نظرات (6)</div>
+          </div>
+          <hr class="commont-hr-part" />
+          <div class="user-comments-part">
+            <div class="user-comments-info">
+              <div class="comments-images-part">
+                <img src="./desing/Captdasdasdure.PNG" alt="" srcset="" />
+              </div>
+              <div class="comments-user-names">
+                <span>ممدی ممدی</span>
+              </div>
+              <div class="comments-starts">
+                <span>
+                  5
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="user-comments-descriptions">
+              <span> سلام عالی بودید کاملا مسلط و با حوصله </span>
+            </div>
+          </div>
+          <hr class="comments-hr" />
+          <div class="user-comments-part">
+            <div class="user-comments-info">
+              <div class="comments-images-part">
+                <img src="./desing/Captdasdasdure.PNG" alt="" srcset="" />
+              </div>
+              <div class="comments-user-names">
+                <span>ممدی ممدی</span>
+              </div>
+              <div class="comments-starts">
+                <span>
+                  5
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="user-comments-descriptions">
+              <span> سلام عالی بودید کاملا مسلط و با حوصله </span>
+            </div>
+          </div>
+          <hr class="comments-hr" />
+          <div class="user-comments-part">
+            <div class="user-comments-info">
+              <div class="comments-images-part">
+                <img src="./desing/Captdasdasdure.PNG" alt="" srcset="" />
+              </div>
+              <div class="comments-user-names">
+                <span>ممدی ممدی</span>
+              </div>
+              <div class="comments-starts">
+                <span>
+                  5
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="user-comments-descriptions">
+              <span> سلام عالی بودید کاملا مسلط و با حوصله </span>
+            </div>
+          </div>
+          <hr class="comments-hr" />
+          <div class="user-comments-part">
+            <div class="user-comments-info">
+              <div class="comments-images-part">
+                <img src="./desing/Captdasdasdure.PNG" alt="" srcset="" />
+              </div>
+              <div class="comments-user-names">
+                <span>ممدی ممدی</span>
+              </div>
+              <div class="comments-starts">
+                <span>
+                  5
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="user-comments-descriptions">
+              <span> سلام عالی بودید کاملا مسلط و با حوصله </span>
+            </div>
+          </div>
+          <hr class="comments-hr" />
+          <div class="user-comments-part">
+            <div class="user-comments-info">
+              <div class="comments-images-part">
+                <img src="./desing/Captdasdasdure.PNG" alt="" srcset="" />
+              </div>
+              <div class="comments-user-names">
+                <span>ممدی ممدی</span>
+              </div>
+              <div class="comments-starts">
+                <span>
+                  5
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="user-comments-descriptions">
+              <span> سلام عالی بودید کاملا مسلط و با حوصله </span>
+            </div>
+          </div>
+          <hr class="comments-hr" />
+        </div>
+      </div>
+
+      <!-- addin the user comments -->
+      <div class="adding-user-comments">
+        <div class="adding-user-comments-positions">
+          <form action="post">
+            <textarea
+              name="user-comments"
+              id="userComments"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </form>
+        </div>
+        <button class="adding-comments-buttons">ثبت نظر</button>
+      </div>
+      <!-- Description -->
+      <div class="description-part">
+        <div class="description-part-positions">
+          <span class="description-part-positions-tittle">نحوه رضرو نوبت</span>
+          <hr class="hr-part-service-box" />
+          <div class="description-part-text-positions">
+            <span class="description-part-text">
+              برای رضرو نوبت و پرداخت می توانید از درگاه سایت استفاده کنید
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- active resevtions -->
+      <div class="active-resevtians-part">
+        <div class="active-resevtians">
+          <div class="active-resevtians-positions">
+            <div
+              class="active-resevtians-right"
+              onclick="removingTheREsevtionsBox(this)"
+            >
+              <div class="active-resevtians-right-img">
+                <img src="./desing/Hair_Salon_Stations.jpg" alt="" srcset="" />
+              </div>
+              <div class="active-resevtians-status">
+                <span>ثبت</span>
+              </div>
+              <div class="active-resevtians-date">
+                <span>18:00</span>
+                <span>20</span>
+                <span>مهر</span>
+              </div>
+            </div>
+            <div class="active-resevtians-left">
+              <div class="active-resevtians-left-positions">
+                <div class="active-resevtians-left-salons-names">
+                  <div class="active-resevtians-left-salons-names-positions">
+                    <span class="active-resevtians-salon-names"
+                      >سالن زیبایی طلایی</span
+                    >
+                    <span
+                      class="active-resevtians-icones"
+                      onclick="removingTheResevtions(this)"
+                    >
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="active-resevtians-left-salons-locations">
+                  <div class="active-resevtians-left-salons-icone">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="active-resevtians-left-salons-address">
+                    <span>
+                      بوشهر - بهمنی - بیمارستان تامین اجنماعی - جنب کوچه استخر -
+                      ارایشگاه طلایی
+                    </span>
+                  </div>
+                </div>
+                <div class="active-resevtians-left-resevtions-price">
+                  <span class="salons-price-text">دستمزد :</span>
+                  <span class="salons-price">100,000</span>
+                  <span class="salons-price-type">هزار تومن</span>
+                </div>
+              </div>
+            </div>
+            <div class="action-resevtion-background">
+              <div class="action-resevtion-background-positions">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                <span>لغو نوبت</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="active-resevtians">
+          <div class="active-resevtians-positions">
+            <div
+              class="active-resevtians-right"
+              onclick="removingTheREsevtionsBox(this)"
+            >
+              <div class="active-resevtians-right-img">
+                <img src="./desing/Hair_Salon_Stations.jpg" alt="" srcset="" />
+              </div>
+              <div class="active-resevtians-status">
+                <span>ثبت</span>
+              </div>
+              <div class="active-resevtians-date">
+                <span>18:00</span>
+                <span>20</span>
+                <span>مهر</span>
+              </div>
+            </div>
+            <div class="active-resevtians-left">
+              <div class="active-resevtians-left-positions">
+                <div class="active-resevtians-left-salons-names">
+                  <div class="active-resevtians-left-salons-names-positions">
+                    <span class="active-resevtians-salon-names"
+                      >سالن زیبایی طلایی</span
+                    >
+                    <span
+                      class="active-resevtians-icones"
+                      onclick="removingTheResevtions(this)"
+                    >
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="active-resevtians-left-salons-locations">
+                  <div class="active-resevtians-left-salons-icone">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="active-resevtians-left-salons-address">
+                    <span>
+                      بوشهر - بهمنی - بیمارستان تامین اجنماعی - جنب کوچه استخر -
+                      ارایشگاه طلایی
+                    </span>
+                  </div>
+                </div>
+                <div class="active-resevtians-left-resevtions-price">
+                  <span class="salons-price-text">دستمزد :</span>
+                  <span class="salons-price">100,000</span>
+                  <span class="salons-price-type">هزار تومن</span>
+                </div>
+              </div>
+            </div>
+            <div class="action-resevtion-background">
+              <div class="action-resevtion-background-positions">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                <span>لغو نوبت</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- shimmer codes (for loading) -->
+      <style>
+        :root {
+          --horizontal-margin: 25%;
+        }
+        .center-things {
+          display: flex;
+          flex-direction: column;
+          margin-left: var(--horizontal-margin);
+          margin-right: var(--horizontal-margin);
+          margin-top: 2em;
+          padding: 2em;
+          border-radius: 8px;
+        }
+        @media screen and (max-width: 992px) {
+          :root {
+            --horizontal-margin: 0;
+          }
+          .center-things:first-child {
+            margin-top: 0;
+          }
+        }
+        .profile {
+          display: flex;
+          flex-direction: row;
+        }
+        .profile-data {
+          display: flex;
+          flex-direction: column;
+          width: 120px;
+          padding: 0 0 10px 10px;
+        }
+        .profile-data .shimmer-line:first-child {
+          margin-top: 15px;
+        }
+      </style>
+
+      <div class="center-things">
+        <div class="shimmer-wrapper">
+          <div class="profile">
+            <div class="shimmer-circle shimmer-circle-md shimmer-animate"></div>
+            <div class="profile-data">
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-60 shimmer-animate"
+              ></div>
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-full  shimmer-animate"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+        </div>
+      </div>
+      <div class="center-things">
+        <div class="shimmer-wrapper">
+          <div class="profile">
+            <div class="shimmer-circle shimmer-circle-md shimmer-animate"></div>
+            <div class="profile-data">
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-60 shimmer-animate"
+              ></div>
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-full  shimmer-animate"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+        </div>
+      </div>
+      <div class="center-things">
+        <div class="shimmer-wrapper">
+          <div class="profile">
+            <div class="shimmer-circle shimmer-circle-md shimmer-animate"></div>
+            <div class="profile-data">
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-60 shimmer-animate"
+              ></div>
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-full  shimmer-animate"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+        </div>
+      </div>
+      <div class="center-things">
+        <div class="shimmer-wrapper">
+          <div class="profile">
+            <div class="shimmer-circle shimmer-circle-md shimmer-animate"></div>
+            <div class="profile-data">
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-60 shimmer-animate"
+              ></div>
+              <div
+                class="shimmer-line shimmer-line-br shimmer-line-full  shimmer-animate"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+          <div
+            class="shimmer-line shimmer-line-br shimmer-line-full shimmer-animate"
+          ></div>
+        </div>
+      </div>
+
+      <!-- end of shimmer codes  -->
+    </main>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- FOOTER DIXED PART -->
+    <div class="footer-tabs border-top text-center">
+      <ul
+        class="nav justify-content-center coustom-nav-tavs"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="active">
+          <a href="">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>خانه</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/package/jqueryBootstrap.js"></script>
+    <script src="/js/package/jsdelivrBootstrap.js"></script>
+    <script src="/js/package/popperBootstrap.js"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then(function(registration) {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch(function(error) {
+            console.log("Service Worker registration failed:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

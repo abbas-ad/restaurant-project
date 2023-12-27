@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: estedad;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.resevtions-boxs-part {
+  width: 90%;
+  height: 380px;
+  background-color: #ffff;
+  box-shadow: rgba(163, 163, 163, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+  margin: 50px auto;
+}
+
+.resevtions-boxs-positains {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.calendar-part {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  scroll-padding: 2px;
+  margin-top: 13px;
+}
+.calendar-part-positions {
+  width: 100px;
+  height: 100px;
+  /* background-color: #08594a; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-left: 4px;
+  color: black;
+  padding: 25px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.active-calendar-part-positions {
+  background-color: #08594a !important;
+  color: #eef6f9 !important;
+}
+.calendar-part-positions .mounth {
+  font-size: 13px;
+  font-weight: bolder;
+}
+.calendar-part-positions .date-number {
+  font-size: 20px;
+  font-weight: bold;
+}
+.calendar-part-positions .date-text {
+  font-size: 13px;
+  font-weight: bolder;
+}
+.morning-part {
+  width: 100%;
+  height: 20%;
+  overflow-y: scroll;
+}
+.afternon-part {
+  width: 100%;
+  height: 20%;
+  overflow-y: scroll;
+}
+.evening-part {
+  width: 100%;
+  height: 20%;
+  overflow-y: scroll;
+}
+.night-part {
+  width: 100%;
+  height: 20%;
+  overflow-y: scroll;
+}
+
+.morning-positions {
+  width: 100%;
+  height: 100%;
+}
+
+.morning-tittle {
+  font-size: 14px;
+  font-weight: lighter;
+  padding-right: 15px;
+  color: #08594a;
+  width: 100%;
+  height: 30%;
+  line-height: 24px;
+  display: block;
+  line-height: 12px;
+}
+
+.morning-time-positions {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  gap: 2px;
+  scroll-padding: 2px;
+  padding-bottom: 10px;
+}
+.morning-time-positions span {
+  background-color: #f4f6f5;
+  padding: 10px;
+  border-radius: 5px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  color: #d3d7d6;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.active-clock span {
+  background-color: #cadad7;
+  color: #08594a;
+}
+
+.savin-resevtions {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.712);
+  text-align: center;
+}
+.savin-resevtions button {
+  width: 80%;
+  height: 65%;
+  background-color: #bbc4c1;
+  margin: 25px auto;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cupon-part {
+  width: 90%;
+  height: 65px;
+  background-color: #ffff;
+  border-radius: 9px;
+  margin: 0 auto;
+  box-shadow: rgba(189, 189, 189, 0.16) 0px 1px 4px;
+}
+.text-part {
+  width: 90%;
+  height: 65px;
+  background-color: #ffff;
+  border-radius: 9px;
+  margin: 10px auto;
+  box-shadow: rgba(189, 189, 189, 0.16) 0px 1px 4px;
+}
+.cupon-inputs,
+.text-inputs {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  
+}
+
+.cupon-inputs, .text-inputs::placeholder {
+  text-align: center;
+  font-weight: bold;
+}
+
+.top-headers{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #ffff;
+  
+}
+.top-headers span{
+  line-height: 45px;
+  font-weight: bold;
+  font-size: 14px;
+
+}

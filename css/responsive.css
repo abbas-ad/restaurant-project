@@ -1,0 +1,173 @@
+/* Mobiles*/
+@media (max-width: 480px) {
+  #myTab li {
+    margin-right: 0px;
+  }
+}
+/* Small device */
+@media (min-width: 481px) and (max-width: 767px) {
+  .galery-images-backgrounds-images {
+    margin: 30% auto;
+    width: 80%;
+  }
+}
+/* small tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-tag {
+    width: 95%;
+    margin: -80px auto;
+  }
+  .swiper-positions {
+    height: 250px;
+  }
+  .swiper-positions .swiper {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+  .descerptions-catd {
+    height: 120px;
+  }
+  .title-catd {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+  .resevtians-timing {
+    padding-bottom: 20px;
+  }
+  .galery-part {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .galery-images-backgrounds-images {
+    margin: 20% auto;
+    width: 70%;
+  }
+}
+/* large tablet / labtap*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-tag {
+    width: 90%;
+    margin: -80px auto;
+  }
+  .swiper-positions {
+    height: 330px;
+  }
+  .swiper-positions .swiper {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+  .title-catd {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    height: 115px;
+  }
+  .descerptions-catd {
+    height: 130px;
+  }
+
+  .our-positions {
+    height: 260px;
+  }
+  .our-positions .gps-part {
+    height: 100%;
+  }
+  .contact-us-catd {
+    height: 80px;
+  }
+  .contact-us-catd .title {
+    padding-top: 12px;
+  }
+  .descriptions-coustom {
+    height: 35% !important;
+  }
+  .resevtians-timing {
+    padding-bottom: 20px;
+  }
+  .galery-part {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .galery-images-backgrounds-images {
+    margin: 15% auto;
+    width: 60%;
+  }
+}
+/* desktop*/
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .main-tag {
+    width: 85%;
+    margin: -80px auto;
+  }
+  .swiper-positions {
+    height: 400px;
+  }
+  .title-catd {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    height: 120px;
+  }
+  .descerptions-catd {
+    height: 130px;
+  }
+  .contact-us-catd {
+    height: 90px;
+  }
+  .resevtians-timing {
+    padding-bottom: 40px;
+  }
+  .swiper-positions .swiper {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+  .galery-part {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .galery-images-backgrounds-images {
+    margin: 10% auto;
+    width: 50%;
+  }
+}
+/* ectera large screens */
+@media (min-width: 19250px) {
+  .main-tag {
+    width: 80%;
+    margin: -80px auto;
+  }
+  .title-catd {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    height: 130px;
+  }
+  .descerptions-catd {
+    height: 130px;
+  }
+  .contact-us-catd {
+    height: 90px;
+  }
+  .our-positions {
+    height: 270px;
+  }
+  .our-positions .gps-part {
+    height: 100%;
+  }
+  .resevtians-timing {
+    padding-bottom: 40px;
+  }
+  .swiper-positions .swiper {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+  .galery-part {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .service-part-postions {
+    display: flex !important;
+    width: 92%;
+    margin: 0 auto;
+  }
+  .service-box {
+    width: 48%;
+  }
+}

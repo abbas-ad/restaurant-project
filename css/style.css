@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --primary-color: #ad162b;
+  --secondary-color: rgba(255, 255, 255, 0.8);
+  --sidebar-width: 275px;
+  --sidebar-bg-color: rgba(173, 22, 43, 0.85);
+  --sidebar-text-color: #fff;
+  --sidebar-box-shadow: 3px 0 15px rgba(10, 8, 8, 0.171);
+  --sidebar-backdrop-filter: blur(15px);
+  --list-group-item-line-height: 36px;
+  --header-text-color: #075b4b;
+  --header-icone-color: #03120d;
+  --filter-bg-color: #f6faf9;
+  --dark-mode-bg-color: #2b2d31;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: IRANSans !important;
+  font-weight: 300;
+  overflow-x: hidden;
+  height: 5000px;
+}
+
+.coustom-bell-icone {
+  font-size: 15px !important;
+  color: var(--header-icone-color);
+}
+.coustom-badge {
+  font-size: 7px !important;
+  color: var(--header-text-color);
+  color: white;
+}
+
+#menuNameHeader {
+  color: var(--header-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.swiper-positions {
+  height: 210px;
+}
+.icons {
+  font-weight: bold !important;
+}
+.swiper {
+  height: 100%;
+}
+.swiper-slide-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination {
+  text-align: left !important;
+  margin-left: 15px;
+}
+.swiper-pagination-bullet {
+  width: 17px !important;
+  height: 4px !important;
+  border-radius: 10px !important;
+  background-color: rgb(65, 63, 63) !important;
+}
+
+.swiper-slide-content {
+  z-index: 60 !important;
+}
+.swiper-slide {
+  width: 295px;
+  transition-duration: 500ms;
+}
+.main-part {
+  position: absolute;
+  margin-top: 200px;
+  width: 100%;
+  background-color: white;
+}
+/* search bar part */
+.search-bar-part {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid rgba(240, 238, 238, 0.582);
+  border: 1px solid rgba(240, 238, 238, 0.582);
+  z-index: 1030;
+  position: relative;
+  background-color: white;
+  box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.05);
+}
+.search-bar-part div,
+.search-bar-part input {
+  margin: 5px;
+  color: #062a1e;
+}
+.coustom-fillter-icones {
+  height: 80%;
+  text-align: center;
+  line-height: 35px !important;
+  background-color: var(--coustom-fillter-icones);
+  border-radius: 10px;
+  margin-right: 10px !important;
+  font-weight: bold;
+  font-size: 13px;
+  color: #0b2b1e;
+}
+.coustom-search-bar-icones {
+  font-size: 18px !important;
+  color: var(--header-text-color);
+  padding-right: 5px;
+}
+.search-bar-part input,
+.search-bar-part input:focus {
+  border: none;
+  outline: none;
+}
+.coustom-locations-part,
+.recomanded-part {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.recomanded-part span {
+  line-height: 42px;
+}
+.search-locations,
+.recomanded-part {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.search-locations i {
+  font-size: 19px;
+}
+.find-gps i {
+  font-size: 19px;
+}
+#coustom-header {
+  position: relative !important;
+}
+.view-all {
+  color: var(--header-text-color);
+  background-color: #e1eae9;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 35px;
+}
+.view-all span {
+  padding: 15px;
+}
+
+/* dark modes buttons */
+label {
+  position: relative;
+  width: 44px;
+  height: 20px;
+  display: block;
+  background: #d9d9d9;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+}
+label:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #f2f2f2;
+  border-radius: 100px;
+  top: 3px;
+  left: 5px;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+input:checked ~ label:after {
+  left: 40px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+input:checked ~ label {
+  background: #242424;
+}
+
+input:checked + label + .background {
+  background: #242424;
+}
+input {
+  display: none;
+}
+
+/*  darl modes styles */
+
+.dark-modes {
+  background-color: var(--dark-mode-bg-color) !important;
+  color: var(--filter-bg-color) !important;
+}
+
+.product-images {
+  width: 100%;
+  height: 50%;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+.custom-product-swiper {
+  width: 200px !important;
+  height: 200px !important;
+  background-color: #fafafa;
+  margin-right: 5px;
+}
+.custom-product-swiper a {
+  width: 100% !important;
+  height: 100% !important;
+}
+.icons {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center !important;
+  line-height: 45px;
+  height: 250px;
+  width: 220px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding-right: 10px;
+  border-radius: 10%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 8px;
+}
+.coustom-swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-main-positins {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+}
+.coustom-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 10%;
+  object-fit: cover;
+}
+.search-input {
+  color: black;
+  display: block;
+  width: 58%;
+  font-size: 13px;
+}
+
+.get-swipper {
+  margin-top: 30px;
+}
+
+
+
+/* RESPONSIVE PART */
+/* MOBILE
+@media (max-width: 480px) {
+}
+/* SMALL DEVICE */
+/* @media (min-width: 481px) and (max-width: 767px) {
+  .swiper-positions {
+    height: 38%;
+  }
+  .main-part {
+    padding-top: 300px;
+  }
+
+} */
+/*  SMALL TABLET */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .swiper-positions {
+    height: 40%;
+  }
+  .main-part {
+    padding-top: 320px;
+  }
+} */
+/* LARGE TABLET AND LABTAB */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  .swiper-positions {
+    height: 45%;
+  }قث
+  .main-part {
+    padding-top: 360px;
+  }
+} */
+/* DESKTOP */
+/* @media (min-width: 1200px) and (max-width: 19919px) {
+  .swiper-positions {
+    height: 50%;
+  }
+  .main-part {
+    padding-top: 420px;
+  }
+} */
+/* LARGE SCREENS */
+/* @media (min-width: 1920px) {
+  .swiper-positions {
+    height: 60%;
+  }
+  .main-part {
+    padding-top: 550px;
+  }
+}  */
+
+/* TODO main part bayad dakhel size Ipad 580 ya 850 fix shavad */

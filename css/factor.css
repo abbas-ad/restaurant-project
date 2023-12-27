@@ -1,0 +1,169 @@
+:root {
+  --BACKGROUND_COLOR: #fafafa;
+  --FONT_FAMILY: IRANSans;
+  --PRIMERY_COLOR: #285953;
+  --SECENDRY_COLOR: #ffff;
+  --BUTTONS_COLOR: #f5ffff;
+  --ICONE_COLOR: rgba(128, 128, 128, 0.473);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--FONT_FAMILY);
+  direction: rtl !important;
+}
+
+body {
+  background-color: var(--BACKGROUND_COLOR);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+}
+.factor-tittle {
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  box-shadow: rgba(197, 197, 197, 0.25) 0px 2px 5px -1px,
+    rgba(184, 184, 184, 0.3) 0px 1px 3px -1px;
+}
+
+.factor-tittle span {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 2.5rem;
+  color: var(--PRIMERY_COLOR);
+}
+
+.factor-top-box {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.factor-booking-times,
+.factor-booking-address {
+  width: 90%;
+  height: 84px;
+  background-color: var(--SECENDRY_COLOR);
+  margin: 0px auto;
+  border-radius: 9px;
+  box-shadow: rgba(218, 218, 218, 0.25) 0px 2px 5px -1px,
+    rgba(218, 218, 218, 0.25) 0px 1px 3px -1px;
+}
+
+.booking-times-tittle,
+.booking-address-tittle {
+  width: 100%;
+  height: 26px;
+  padding-right: 20px;
+}
+.booking-times-tittle span,
+.booking-address-tittle span {
+  font-size: 13px;
+}
+
+.factor-times-info,
+.factor-address-info {
+  width: 100%;
+  height: 48%;
+}
+
+.factor-icones-part {
+  width: 40px;
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.factor-icones-part i {
+  color: var(--ICONE_COLOR);
+}
+
+.factor-data-part {
+  width: 84%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.factor-data-part span {
+  font-size: 13px;
+  color: var(--PRIMERY_COLOR);
+}
+
+.factor-cantanio-buttons {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 1px;
+  right: 0;
+  text-align: center;
+}
+.factor-cantanio-buttons-positions {
+  width: 92%;
+  height: 70%;
+  background-color: var(--PRIMERY_COLOR);
+  border-radius: 9px;
+  margin: 5px auto;
+  box-shadow: #58c8b0 0px 30px 60px -12px, #4fd7ba 0px 18px 36px -18px;
+}
+
+.factor-cantanio-buttons-positions span {
+  line-height: 39px;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--BUTTONS_COLOR);
+}
+
+.bottom-box {
+  width: 90%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.price-model-one {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 5px; */
+}
+.price-model-one span,
+.price-model-two span {
+  font-size: 13px;
+  color: var(--PRIMERY_COLOR);
+  padding-top: 5px;
+}
+
+.tittle {
+  padding-right: 10px;
+}
+.price {
+  padding-left: 10px;
+}
+
+.price-model-one-hr {
+  margin-top: 10px;
+  color: rgba(128, 128, 128, 0.04);
+}
+
+.price-model-two {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
